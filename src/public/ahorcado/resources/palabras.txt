@@ -1,0 +1,8 @@
+programacion
+ahorcado
+teclado
+raton
+computadora
+web
+php
+codigo

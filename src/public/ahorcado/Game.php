@@ -32,21 +32,31 @@ class Game {
     }
 
     /**
-     * Funcion que procesa una letra, resta intentos si falla
+     * Funcion que procesa una letra o palabra, resta intentos si falla
      * @param string $letter Letra a adivinar
      * @return void
      */
     public function guessLetter(string $letter): void {
         $letter = strtoupper($letter);
 
-        if (in_array($letter, $this->usedLetters) || $this->isWon() || $this->isLost()) {
+        if ($this->isWon() || $this->isLost()) {
             return;
         }
 
-        $this->usedLetters[] = $letter;
-
-        if (strpos($this->word, $letter) === false) {
-            $this->attemptsLeft--;
+        if (strlen($letter) > 1) {
+            if ($letter === $this->word) {
+                $this->usedLetters = str_split($this->word);
+            } else {
+                $this->attemptsLeft--;
+            }
+        } else {
+            if (in_array($letter, $this->usedLetters)) {
+                return;
+            }
+            $this->usedLetters[] = $letter;
+            if (strpos($this->word, $letter) === false) {
+                $this->attemptsLeft--;
+            }
         }
     }
 

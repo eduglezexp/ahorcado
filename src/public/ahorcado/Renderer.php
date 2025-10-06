@@ -13,7 +13,7 @@ class Renderer {
      * @return string HTML con la imagen.
      */
     public function image(int $attemptsLeft): string {
-        $path = "resources/gift/";
+        $path = "resources/gif/";
         $filename = "{$path}{$attemptsLeft}.gif";
         return "<div class='hangman'><img src='{$filename}' alt='Ahorcado' /></div>";
     }

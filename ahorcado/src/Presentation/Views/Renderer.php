@@ -5,6 +5,8 @@
  * @version 1.0
  */
 
+namespace Presentation\Views;
+
 class Renderer {
 
     /**

@@ -5,7 +5,9 @@
  * @version 1.0
  */
 
-class WordProvider {
+namespace Application\Domain\Entity;
+
+class WordProviderEntity {
     private string $filePath;
 
     /**

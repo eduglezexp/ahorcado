@@ -1,4 +1,10 @@
 <?php
+
+use Application\Domain\Entity\GameEntity as Game;
+use Application\Domain\Entity\WordProviderEntity as WordProvider;
+use Infrastructure\Autoload\Storage as Storage;
+use Presentation\Views\Renderer as Renderer;
+
 require 'Game.php';
 require 'WordProvider.php';
 require 'Storage.php';

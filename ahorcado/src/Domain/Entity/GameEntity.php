@@ -5,7 +5,9 @@
  * @version 1.0
  */
 
-class Game {
+namespace Application\Domain\Entity;
+
+class GameEntity {
     private string $word;
     private int $maxAttempts;
     private int $attemptsLeft;

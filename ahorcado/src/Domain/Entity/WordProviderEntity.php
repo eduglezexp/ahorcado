@@ -7,7 +7,7 @@
 
 namespace Application\Domain\Entity;
 
-class WordProviderEntity {
+class WordProviderEntity implements IWordProviderRepository {
     private string $filePath;
 
     /**

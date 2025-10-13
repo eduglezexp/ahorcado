@@ -7,7 +7,7 @@
 
 namespace Application\Domain\Entity;
 
-class GameEntity {
+class GameEntity implements IGameRepository {
     private string $word;
     private int $maxAttempts;
     private int $attemptsLeft;

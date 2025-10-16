@@ -9,6 +9,8 @@ namespace Domain\Entity;
 
 use Domain\Repository\IWordProviderRepository;
 
+require_once __DIR__ . '/../Repository/IWordProviderRepository.php';
+
 class WordProviderEntity implements IWordProviderRepository {
     private string $filePath;
 

@@ -9,6 +9,8 @@ namespace Domain\Entity;
 
 use Domain\Repository\IGameRepository;
 
+require_once __DIR__ . '/../Repository/IGameRepository.php';
+
 class GameEntity implements IGameRepository {
     private string $word;
     private int $maxAttempts;

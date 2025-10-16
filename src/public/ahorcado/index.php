@@ -5,9 +5,14 @@ use Domain\Entity\WordProviderEntity as WordProvider;
 use Infrastructure\Autoload\Storage as Storage;
 use Presentation\Views\Renderer as Renderer;
 
+require_once __DIR__ . '/Infrastructure/Autoload/Storage.php';
+require_once __DIR__ . '/Presentation/Views/Renderer.php';
+require_once __DIR__ . '/Domain/Entity/GameEntity.php';
+require_once __DIR__ . '/Domain/Entity/WordProviderEntity.php';
+
 $storage = new Storage();
 $renderer = new Renderer();
-$provider = new WordProvider(__DIR__ . '/resources/palabras.txt');
+$provider = new WordProvider(__DIR__ . '/resources/storage/palabras.txt');
 
 $state = $storage->get('state');
 $word = $storage->get('word');
@@ -37,7 +42,7 @@ $storage->set('word', $game->getWord());
 <head>
     <meta charset="UTF-8">
     <title>Ahorcado</title>
-    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
 </head>
 <body>
     <div class="info-juego">

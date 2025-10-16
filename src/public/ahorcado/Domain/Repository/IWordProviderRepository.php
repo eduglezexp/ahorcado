@@ -2,7 +2,7 @@
 
 namespace Domain\Repository;
 
-interface IWordProvider
+interface IWordProviderRepository
 {
     public function randomWord(): string;
 }

@@ -5,7 +5,9 @@
  * @version 1.0
  */
 
-namespace Application\Domain\Entity;
+namespace Domain\Entity;
+
+use Domain\Repository\IGameRepository;
 
 class GameEntity implements IGameRepository {
     private string $word;

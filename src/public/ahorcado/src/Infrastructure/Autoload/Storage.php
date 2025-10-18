@@ -5,7 +5,7 @@
  * @version 1.0
  */
 
-namespace Infrastructure\Autoload;
+namespace App\Infrastructure\Autoload;
 
 class Storage {
     private string $key;

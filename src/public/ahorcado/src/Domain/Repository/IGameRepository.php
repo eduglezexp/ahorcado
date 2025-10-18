@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Repository;
+namespace App\Domain\Repository;
 
 interface IGameRepository {
     

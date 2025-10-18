@@ -1,14 +1,11 @@
 <?php
 
-use Domain\Entity\GameEntity as Game;
-use Domain\Entity\WordProviderEntity as WordProvider;
-use Infrastructure\Autoload\Storage as Storage;
-use Presentation\Views\Renderer as Renderer;
+use App\Domain\Entity\GameEntity as Game;
+use App\Domain\Entity\WordProviderEntity as WordProvider;
+use App\Infrastructure\Autoload\Storage as Storage;
+use App\Presentation\Views\Renderer as Renderer;
 
-require_once __DIR__ . '/Infrastructure/Autoload/Storage.php';
-require_once __DIR__ . '/Presentation/Views/Renderer.php';
-require_once __DIR__ . '/Domain/Entity/GameEntity.php';
-require_once __DIR__ . '/Domain/Entity/WordProviderEntity.php';
+require __DIR__ . '/vendor/autoload.php';
 
 $storage = new Storage();
 $renderer = new Renderer();

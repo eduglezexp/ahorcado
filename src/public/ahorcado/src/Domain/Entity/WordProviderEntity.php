@@ -5,9 +5,9 @@
  * @version 1.0
  */
 
-namespace Domain\Entity;
+namespace App\Domain\Entity;
 
-use Domain\Repository\IWordProviderRepository;
+use App\Domain\Repository\IWordProviderRepository;
 
 require_once __DIR__ . '/../Repository/IWordProviderRepository.php';
 

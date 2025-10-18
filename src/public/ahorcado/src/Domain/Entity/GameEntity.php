@@ -5,9 +5,9 @@
  * @version 1.0
  */
 
-namespace Domain\Entity;
+namespace App\Domain\Entity;
 
-use Domain\Repository\IGameRepository;
+use App\Domain\Repository\IGameRepository;
 
 require_once __DIR__ . '/../Repository/IGameRepository.php';
 
